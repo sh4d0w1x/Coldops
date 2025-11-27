@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ColdOps — Cold Email Infrastructure</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+
+    <!-- floating decorative particles -->
+    <canvas id="particles" class="particles"></canvas>
+
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="brand">
+          <img src="logo.jpg" alt="ColdOps logo" class="logo">
+          <span class="brand-name">ColdOps</span>
+        </div>
+        <nav class="nav-cta">
+          <a href="#pricing" class="btn ghost">Pricing</a>
+          <a href="#contact" class="btn primary">Request Quote</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1 class="hero-title">ColdOps</h1>
+          <p class="hero-sub">Done-for-you cold email infrastructure — tenants, domains & inboxes configured and deliverability-tuned.</p>
+
+          <ul class="hero-features">
+            <li>Full tenant setup & isolation</li>
+            <li>Fresh domains + SPF/DKIM/DMARC</li>
+            <li>Up to 99 inboxes, warmup & routing</li>
+          </ul>
+
+          <div class="hero-actions">
+            <a class="btn cta-glow" href="#contact">Request a Quote</a>
+            <a class="btn ghost" href="#how">How it works</a>
+          </div>
+
+          <div class="trust">
+            <span class="trust-text">Trusted by operators & agencies</span>
+            <div class="trust-logos">
+              <img alt="brand" src="https://dummyimage.com/140x48/ffffff/000000&text=Brand+1">
+              <img alt="brand" src="https://dummyimage.com/140x48/ffffff/000000&text=Brand+2">
+              <img alt="brand" src="https://dummyimage.com/140x48/ffffff/000000&text=Brand+3">
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <!-- Holographic SVG shape -->
+          <div class="holo-wrap">
+            <svg class="holo" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+              <defs>
+                <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#e9fbff"/>
+                  <stop offset="35%" stop-color="#bfefff"/>
+                  <stop offset="65%" stop-color="#8ce0ff"/>
+                  <stop offset="100%" stop-color="#dff9ff"/>
+                </linearGradient>
+                <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="25" />
+                </filter>
+              </defs>
+
+              <g filter="url(#blur)">
+                <path class="blob" fill="url(#g1)" d="M400,300c60,-120 220,-80 220,-80c-20,160 -80,220 -160,260c-80,40 -160,20 -240,-40c-80,-60 -120,-160 -80,-240c40,-80 160,-140 240,-160c80,-20 120,40 0,260z"/>
+              </g>
+
+              <g>
+                <path fill="rgba(255,255,255,0.06)" d="M80,420c40,-90 160,-120 240,-160c80,-40 160,-80 220,-40c60,40 40,160 -40,220c-80,60 -220,140 -360,-20z" />
+              </g>
+            </svg>
+
+            <!-- frosted glass card -->
+            <div class="holo-card">
+              <div class="card-title">ColdOps Infra</div>
+              <div class="card-body">Tenants • Domains • 99 inboxes • Warmup • DNS</div>
+              <div class="card-cta"><a href="#contact" class="btn small primary">Get Quote</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section how">
+      <div class="container">
+        <h2>How it works</h2>
+        <div class="grid">
+          <div class="card">
+            <div class="step">1</div>
+            <h3>Pick setup</h3>
+            <p>Choose tenant size, domains & inbox count.</p>
+          </div>
+          <div class="card">
+            <div class="step">2</div>
+            <h3>We build</h3>
+            <p>Automated DNS, SPF/DKIM/DMARC, warmup scripts.</p>
+          </div>
+          <div class="card">
+            <div class="step">3</div>
+            <h3>Connect & Send</h3>
+            <p>Integrate with your outreach tool and scale safely.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section pricing">
+      <div class="container">
+        <h2>Pricing</h2>
+
+        <div class="price-grid">
+          <div class="price-card">
+            <div class="price-tier">Starter</div>
+            <div class="price-num">$249</div>
+            <div class="price-desc">1 tenant • 2 domains • 20 inboxes</div>
+            <a class="btn ghost" href="#contact">Choose</a>
+          </div>
+
+          <div class="price-card featured">
+            <div class="badge">Popular</div>
+            <div class="price-tier">Pro</div>
+            <div class="price-num">$499</div>
+            <div class="price-desc">1 tenant • 4 domains • 80 inboxes</div>
+            <a class="btn primary" href="#contact">Choose</a>
+          </div>
+
+          <div class="price-card">
+            <div class="price-tier">Agency</div>
+            <div class="price-num">$899</div>
+            <div class="price-desc">3 tenants • 6+ domains • 200 inboxes</div>
+            <a class="btn ghost" href="#contact">Choose</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Request a Quote / Book a Call</h2>
+        <p style="opacity:0.8">Drop an email and we'll reply with pricing & availability. Or request a call.</p>
+
+        <form id="leadForm" class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <div class="row">
+            <input name="email" type="email" placeholder="Your email" required>
+            <input name="company" type="text" placeholder="Company (optional)">
+          </div>
+          <textarea name="message" rows="4" placeholder="Notes (optional)"></textarea>
+          <div style="display:flex; gap:12px; align-items:center; margin-top:12px;">
+            <button class="btn primary" type="submit">Request Quote</button>
+            <a class="btn ghost" href="https://calendly.com" target="_blank" rel="noopener">Or book a call</a>
+          </div>
+        </form>
+
+        <div id="formMsg" class="form-msg" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© 2025 ColdOps — All rights reserved.</div>
+        <div class="footer-links">
+          <a class="x-link" href="https://x.com/ColdOpsCO" target="_blank" rel="noopener">
+            <!-- X icon -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#e6fbff" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2H21.5l-7.555 8.63L22 22h-6.422l-5.006-6.545L4.77 22H1.5l8.078-9.23L2 2h6.578l4.51 5.993L18.244 2z"/></svg>
+            <span>Follow @ColdOpsCO</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    // form feedback (keeps user on page)
+    const form = document.getElementById('leadForm');
+    const msg = document.getElementById('formMsg');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const endpoint = form.action;
+      msg.textContent = 'Sending...';
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          msg.textContent = 'Thanks — we got your request. We’ll reply within 24h.';
+          form.reset();
+        } else {
+          const json = await res.json();
+          msg.textContent = (json && json.error) ? json.error : 'Submission failed. Try again.';
+        }
+      } catch (err) {
+        msg.textContent = 'Network error. Try again later.';
+      }
+      setTimeout(()=> msg.textContent = '', 6000);
+    });
+
+    // Simple floating particles background (canvas)
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let w, h, particles = [];
+    function resize() {
+      w = canvas.width = innerWidth;
+      h = canvas.height = innerHeight;
+    }
+    addEventListener('resize', resize);
+    resize();
+    function rand(min,max){ return Math.random()*(max-min)+min; }
+    for(let i=0;i<60;i++){
+      particles.push({x:rand(0,w), y:rand(0,h), r:rand(0.5,2.2), vx:rand(-0.2,0.2), vy:rand(-0.1,0.1), alpha:rand(0.02,0.12)});
+    }
+    function draw(){
+      ctx.clearRect(0,0,w,h);
+      for(let p of particles){
+        p.x += p.vx; p.y += p.vy;
+        if(p.x<0) p.x = w; if(p.x>w) p.x=0;
+        if(p.y<0) p.y = h; if(p.y>h) p.y=0;
+        ctx.beginPath();
+        ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+        ctx.fillStyle = 'rgba(140,200,255,'+p.alpha+')';
+        ctx.fill();
+      }
+      requestAnimationFrame(draw);
+    }
+    draw();
+  </script>
+</body>
+</html>
