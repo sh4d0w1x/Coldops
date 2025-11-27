@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColdOps — Cold Email Infrastructure</title>
+
+    <!-- Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            font-family: "Inter", sans-serif;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 10px;
+        }
+
+        img.logo {
+            width: 150px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 10px rgba(90, 180, 255, 0.5));
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        p.subtitle {
+            text-align: center;
+            font-size: 20px;
+            opacity: 0.75;
+            margin-bottom: 40px;
+        }
+
+        /* Features */
+        section {
+            margin-top: 80px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .features-list {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
+        .features-list li {
+            margin-bottom: 10px;
+        }
+
+        .features-list li::before {
+            content: "• ";
+            color: #5cc9ff;
+        }
+
+        /* Pricing */
+        .price-box {
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            backdrop-filter: blur(6px);
+        }
+
+        .price {
+            font-size: 36px;
+            color: #5cc9ff;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .price-sub {
+            opacity: 0.6;
+        }
+
+        /* Contact Form */
+        .contact-box {
+            max-width: 600px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 14px;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            margin-bottom: 15px;
+        }
+
+        button.cta {
+            width: 100%;
+            padding: 14px;
+            background: #5cc9ff;
+            color: #000;
+            font-size: 18px;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button.cta:hover {
+            background: #8fe0ff;
+        }
+
+        /* Logos */
+        .logos {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .logos img {
+            width: 120px;
+            margin: 12px;
+            opacity: 0.35;
+            filter: grayscale(100%);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            opacity: 0.5;
+            font-size: 14px;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.jpg" class="logo" alt="ColdOps Logo">
+        <h1>ColdOps</h1>
+        <p class="subtitle">Done-for-you cold email infrastructure. Domains, tenants & inboxes — fully configured and ready to send.</p>
+    </header>
+
+    <!-- FEATURES -->
+    <section>
+        <h2>What You Get</h2>
+        <ul class="features-list">
+            <li>Full Microsoft tenant setup</li>
+            <li>Fresh domains properly warmed</li>
+            <li>Up to 99 fully configured inboxes</li>
+            <li>SPF / DKIM / DMARC / DNS fully set up</li>
+            <li>Deliverability-optimized configuration</li>
+            <li>Warmup systems ready-to-go</li>
+            <li>Delivery in under 24 hours</li>
+            <li>Ongoing support</li>
+        </ul>
+    </section>
+
+    <!-- PRICING -->
+    <section>
+        <h2>Pricing</h2>
+        <div class="price-box">
+            <div class="price">From $249 USD</div>
+            <div class="price-sub">Per full infrastructure setup</div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+        <h2>Get a Quote / Book a Call</h2>
+        <p style="text-align:center; opacity:0.7; margin-bottom:20px;">
+            Enter your email and we’ll get back to you with pricing + availability.
+        </p>
+
+        <div class="contact-box">
+            <form action="https://formspree.io/f/xpwalxyz" method="POST">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <button type="submit" class="cta">Request a Quote</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- TRUST -->
+    <section>
+        <h2>Trusted By</h2>
+        <div class="logos">
+            <img src="https://dummyimage.com/200x70/ffffff/000000&text=Agency+1">
+            <img src="https://dummyimage.com/200x70/ffffff/000000&text=Agency+2">
+            <img src="https://dummyimage.com/200x70/ffffff/000000&text=Agency+3">
+        </div>
+    </section>
+
+    <footer>
+        © 2025 ColdOps. All rights reserved.
+    </footer>
+
+</body>
+</html>
