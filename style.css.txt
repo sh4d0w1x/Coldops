@@ -1,0 +1,73 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.9)
+    ),
+    url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 140px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(180, 220, 255, 0.7);
+}
+
+.title {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(140, 200, 255, 0.9);
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    opacity: 0.85;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 15px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    background: rgba(160, 205, 255, 0.15);
+    border: 1px solid rgba(180, 220, 255, 0.4);
+    backdrop-filter: blur(6px);
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: rgba(180, 220, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
