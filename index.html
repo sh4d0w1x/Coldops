@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ColdOps — Cold Email Infrastructure</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Snow background -->
+  <canvas id="snowCanvas" aria-hidden="true"></canvas>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">ColdOps</div>
+      <nav class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#about">What is ColdOps</a>
+        <a href="#offer">What We Offer</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#metrics">Metrics</a>
+        <a href="#faq">FAQ</a>
+        <a href="#book" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="hero section">
+      <!-- Centered ColdOps + Cold email infra -->
+      <div class="container hero-title-bar">
+        <div class="hero-title-wrap">
+          <h1 class="title" id="logoTitle">
+            <span>C</span><span>o</span><span>l</span><span>d</span><span>O</span><span>p</span><span>s</span>
+          </h1>
+          <div class="hero-tagline">
+            <span class="hero-tagline-pill">Cold email infra</span>
+            <span class="hero-tagline-glow"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <p class="lead">
+            Done-for-you cold email infrastructure: IPs, domains, 99 inboxes, authentication setup,
+            24h delivery and ongoing support — built for agencies, outbound teams and solo operators or small teams.
+          </p>
+
+          <ul class="quick">
+            <li>Reputation-safe architecture built around IPs and domains.</li>
+            <li>Up to 99 inboxes per deployment, fully configured.</li>
+            <li>Authentication (SPF / DKIM / DMARC) set up the right way.</li>
+            <li>Mailboxes live in 24 hours + 24/7 post-setup support.</li>
+            <li>Some of the most competitive infra pricing in the market for serious cold email.</li>
+          </ul>
+
+          <div class="actions">
+            <button class="btn primary magnetic" data-magnetic data-scroll="#book">
+              Contact
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <!-- Interactive Cold Email Console -->
+          <div class="hero-console" id="heroGraphic">
+            <div class="console-header">
+              <span class="console-dot dot-red"></span>
+              <span class="console-dot dot-amber"></span>
+              <span class="console-dot dot-green"></span>
+              <span class="console-title">ColdOps Infra Console</span>
+            </div>
+
+            <div class="console-metrics">
+              <div class="console-pill">
+                <span>IP</span>
+                <strong>1</strong>
+              </div>
+              <div class="console-pill">
+                <span>Domain</span>
+                <strong>1</strong>
+              </div>
+              <div class="console-pill">
+                <span>Inboxes</span>
+                <strong>99</strong>
+              </div>
+            </div>
+
+            <div class="console-stream-label">
+              Cold campaigns going live
+            </div>
+            <div class="console-stream">
+              <div class="stream-track">
+                <div class="stream-packet"></div>
+              </div>
+            </div>
+
+            <div class="console-footer">
+              <div class="console-tag">Cold email</div>
+              <div class="console-tag">In 24 hours</div>
+              <div class="console-tag">Ready to send</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST / LOGOS -->
+    <section id="trusted" class="section trust-section">
+      <div class="container">
+        <div class="trust-top">
+          <span class="trust-label">Trusted infrastructure</span>
+          <p class="trust-text">
+            Trusted by outbound teams and agencies — and fully compatible with the leading cold email sequencers and automation platforms.
+          </p>
+        </div>
+
+        <div class="trust-marquee">
+          <div class="trust-track">
+            <span>YC-backed outbound agencies</span>
+            <span>High-volume B2B lead gen teams</span>
+            <span>Multi-brand outbound squads</span>
+            <span>Cold email operators scaling globally</span>
+            <span>Infra built for serious sending</span>
+            <span>Sequencer-native workflows</span>
+          </div>
+        </div>
+
+        <!-- Moving sequencer logos -->
+        <div class="seq-marquee">
+          <div class="seq-track">
+            <div class="seq-item">
+              <img src="assets/emailbison-logo.png" alt="EmailBison logo" />
+            </div>
+            <div class="seq-item">
+              <img src="assets/instantly-logo.svg" alt="Instantly logo" />
+            </div>
+            <div class="seq-item">
+              <img src="assets/plusvibe-logo.svg" alt="PlusVibe logo" />
+            </div>
+            <div class="seq-item">
+              <img src="assets/smartlead-logo.svg" alt="Smartlead logo" />
+            </div>
+            <div class="seq-item">
+              <img src="assets/apollo-logo.svg" alt="apollo logo" />
+            </div>
+
+            <div class="seq-item">
+              <img src="assets/emailbison-logo.png" alt="EmailBison logo" />
+            </div>
+            <div class="seq-item">
+              <img src="assets/instantly-logo.svg" alt="Instantly logo" />
+            </div>
+            <div class="seq-item">
+              <img src="assets/plusvibe-logo.svg" alt="PlusVibe logo" />
+            </div>
+            <div class="seq-item">
+              <img src="assets/smartlead-logo.svg" alt="Smartlead logo" />
+            </div>
+            <div class="seq-item">
+              <img src="assets/apollo-logo.svg" alt="apollo logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IS COLDOPS -->
+    <section id="about" class="section reveal">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <h2>What is ColdOps?</h2>
+          <p class="section-text">
+            ColdOps is the infra layer behind your cold email. We don’t write your copy or build your offers —
+            we build and maintain the system that keeps your sending alive: IPs, domains, inboxes, authentication and warmup.
+          </p>
+          <p class="section-text">
+            Instead of duct-taping random accounts and praying your domains don’t get burned,
+            you get a structured sending machine built to plug into your sequencers.
+          </p>
+          <p class="section-text">
+            Forget about the technical headaches — leave the entire infra to us, and we’ll get you sending reliably and safely.
+          </p>
+
+          <h3 class="subheading">Why choose us?</h3>
+          <ul class="section-list">
+            <li>Infra designed specifically for cold email and outbound.</li>
+            <li>We’ve dealt with burned setups at scale — we design to avoid that.</li>
+            <li>You talk to operators, not generic “support agents”.</li>
+          </ul>
+        </div>
+
+        <div class="about-cards">
+          <div class="about-card">
+            <span class="about-tag">Infra first</span>
+            <p>Everything is built around deliverability and long-term sending.</p>
+          </div>
+          <div class="about-card">
+            <span class="about-tag">Battle-tested</span>
+            <p>Patterns forged in real outbound — not theory or blog posts.</p>
+          </div>
+          <div class="about-card">
+            <span class="about-tag">Plug &amp; send</span>
+            <p>We operate the cold email infrastructure behind the scenes so your team only worries about copy and targeting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE OFFER -->
+    <section id="offer" class="section blue reveal">
+      <div class="container">
+        <h2>What We Offer</h2>
+
+        <div class="cards offer-cards">
+          <article class="tilt-card offer-card" data-delay="0">
+            <h3>Infra done-for-you</h3>
+            <p>
+              We handle IPs, domains and inbox creation so you never have to think about where or how things are hosted.
+            </p>
+          </article>
+          <article class="tilt-card offer-card" data-delay="80">
+            <h3>Deliverability-first setup</h3>
+            <p>
+              Authentication and routing tuned specifically for cold email — not generic newsletters.
+            </p>
+          </article>
+          <article class="tilt-card offer-card" data-delay="140">
+            <h3>Scale without chaos</h3>
+            <p>
+              From 10 to 50+  or even more? We deploy large-scale sending setups with clean structure and zero operational mess.
+            </p>
+          </article>
+          <article class="tilt-card offer-card" data-delay="200">
+            <h3>Slack + experts included</h3>
+            <p>
+              You get a Slack workspace with a group of experts plus a ColdOps operator assigned to your team.
+            </p>
+          </article>
+        </div>
+
+        <h3 class="subheading">What’s included</h3>
+        <ul class="service-list">
+          <li>
+            <strong>IP setup:</strong> Strategy and routing built around reputation-safe sending.
+          </li>
+          <li>
+            <strong>Domains:</strong> Each setup uses a dedicated sending domain you provide, paired with 99 inboxes — structured and organized.
+          </li>
+          <li>
+            <strong>Inboxes:</strong> Up to 99 inboxes per setup, named and arranged for clarity, tracking and scale.
+          </li>
+          <li>
+            <strong>Authentication:</strong> SPF, DKIM, DMARC and all required records set up correctly so your emails land where they should.
+          </li>
+          <li>
+            <strong>Delivery time:</strong> All inboxes are built and ready within ~24 hours — we run the infra so you don’t deal with technical setup.
+          </li>
+          <li>
+            <strong>Sequencer-ready:</strong> You can connect the inboxes to any sequencer you want — or our team can handle the integration for you. We support Instantly, Smartlead, EmailBison, PlusVibe, and more.
+          </li>
+          <li>
+            <strong>Expert support:</strong> From A to Z, an operator guides you. You don’t worry about anything — just let warmup run and start ripping once everything’s ready.
+          </li>
+          <li>
+            <strong>Slack workspace:</strong> A shared workspace with a group of experts for questions, tweaks and scaling.
+          </li>
+        </ul>
+
+        <h3 class="subheading">What to expect</h3>
+        <div class="expect-card">
+          <p class="section-text">
+            Expect a smooth, white-glove experience from the moment you start.
+            We build everything, connect it to your sequencer, guide your warmup, and keep things stable as you scale.
+            No domain headaches, no chaotic inbox management — just a clean, reliable foundation that gets you sending fast.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section reveal">
+      <div class="container">
+        <h2>Pricing</h2>
+        <p class="muted">
+          Fair, transparent pricing — built to help you scale without burning your margins. Final quote depends on your volume and stack.
+        </p>
+
+        <div class="pricing-grid">
+          <!-- STARTER PLAN -->
+          <div class="price-card">
+            <h3>Starter</h3>
+            <p class="price">
+              $350
+              <span class="price-sub">one-time setup fee</span>
+            </p>
+            <ul>
+              <li>1 free domain (up to 99 inboxes) fully configured</li>
+              <li>Full DNS, SPF, DKIM, DMARC &amp; routing setup</li>
+              <li>Inbox naming &amp; structured deployment</li>
+              <li>Sequencer integration with your preferred platform</li>
+              <li>48-hour inbox turnaround</li>
+              <li>Slack workspace + dedicated operator support</li>
+              <li>Warmup guidance and deliverability-minded setup</li>
+            </ul>
+            <p class="muted small-line">
+              <strong>Additional domains:</strong> $20/month per domain (setup included).
+            </p>
+            <button class="btn primary price-btn" data-scroll="#book">
+              Contact
+            </button>
+          </div>
+
+          <!-- GROWTH PLAN -->
+          <div class="price-card featured">
+            <h3>Growth</h3>
+            <p class="price">
+              $750
+              <span class="price-sub">one-time setup fee</span>
+            </p>
+            <ul>
+              <li>5 free domains included (each with up to 99 inboxes)</li>
+              <li>Full DNS, SPF, DKIM, DMARC &amp; routing setup</li>
+              <li>Inbox naming &amp; structured deployment</li>
+              <li>Sequencer integration with your preferred platform</li>
+              <li>24-hour inbox turnaround</li>
+              <li>Slack workspace + dedicated operator support</li>
+              <li>Warmup guidance and deliverability-minded setup</li>
+            </ul>
+            <p class="muted small-line">
+              <strong>Additional domains:</strong> $15/month per domain (setup included).
+            </p>
+            <button class="btn ghost price-btn" data-scroll="#book">
+              Contact
+            </button>
+          </div>
+
+          <!-- SCALE / CUSTOM PLAN -->
+          <div class="price-card">
+            <h3>Scale</h3>
+            <p class="price">
+              Let’s talk
+              <span class="price-sub">custom infra</span>
+            </p>
+            <ul>
+              <li>30–50+ domains and multi-brand architectures</li>
+              <li>Custom high-volume routing &amp; infrastructure design</li>
+              <li>Dedicated operator &amp; priority Slack lane</li>
+              <li>Monthly deliverability &amp; infra reviews</li>
+              <li>Warmup funnels &amp; reputation protection</li>
+              <li>Sequencer management across brands and teams</li>
+            </ul>
+            <p class="muted small-line">
+              Pricing is tailored to your volume, complexity and stack — we design the infra around your outbound machine.
+            </p>
+            <button class="btn primary price-btn" data-scroll="#book">
+              Contact
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS + PIPELINE -->
+    <section id="metrics" class="section blue reveal">
+      <div class="container">
+        <div class="metrics-layout">
+          <div class="metrics-copy">
+            <h2>Cold email performance is dictated by infrastructure long before copy or targeting.  
+                Random IPs and mismatched domains create random results.</h2>
+            <p class="section-text metrics-text">
+              With ColdOps, you operate on clean, isolated infrastructure — your own dedicated IP strategy, your own domain structure, your own inbox network.  
+                No shared pools, no mystery configurations, no hidden risks. Just stable, reputation-safe sending built intentionally for outbound.
+            </p>
+          </div>
+
+          <div class="metrics-grid">
+            <div class="metric">
+              <div class="num" data-target="98">0</div>
+              <div class="label">Inbox health (%)</div>
+            </div>
+            <div class="metric">
+              <div class="num" data-target="10000">0</div>
+              <div class="label">Daily sends</div>
+            </div>
+            <div class="metric">
+              <div class="num" data-target="24">0</div>
+              <div class="label">Hours to deliver infra</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pipeline">
+          <div class="pipeline-step">IP / Server</div>
+          <div class="pipeline-arrow">→</div>
+          <div class="pipeline-step">Domain</div>
+          <div class="pipeline-arrow">→</div>
+          <div class="pipeline-step">Mailboxes</div>
+          <div class="pipeline-arrow">→</div>
+          <div class="pipeline-step pipeline-step-cta">Start sending</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section reveal">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you send campaigns for us?</span>
+              <span class="faq-arrow"></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                No, ColdOps focuses on the infrastructure behind your outbound.  
+                You simply provide the domain you want to use, and we handle everything else — IP setup, inbox creation, authentication, routing, and uploading the inboxes into your sequencer.
+
+                Once warmup is complete, you can start sending right away with a clean, reliable setup.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can you work with our existing domains?</span>
+              <span class="faq-arrow"></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes, as long as we can manage the records. We usually mix your main brand with fresh sending domains
+                to protect core assets.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How long until we can start sending?</span>
+              <span class="faq-arrow"></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Mailboxes are delivered within 24–48 hours depending on your plan.  
+                For best results, we recommend a warmup ramp before going full volume — typically around 2 weeks for optimal performance.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Which tools do you integrate with?</span>
+              <span class="faq-arrow"></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Any sequencer that connects to inboxes: Instantly, Smartlead, EmailBison, PlusVibe and more.
+              </p>
+            </div>  
+
+          </div>          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you provide the domains, or do we bring our own?</span>
+              <span class="faq-arrow"></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                You choose the domain you want to use, and we handle the entire technical setup.  
+                If you need help picking the right naming style or avoiding risky patterns, we’ll guide you.
+              </p>
+            </div>
+                      </div>          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you replace burned domains or inboxes?</span>
+              <span class="faq-arrow"></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                If a domain becomes risky or burned, we help you replace it and migrate your setup smoothly.  
+                Our goal is to keep you sending with as little interruption as possible.
+              </p>
+            </div>
+                      </div>          <div class="faq-item">
+            <button class="faq-question">
+              <span>What happens if deliverability drops?</span>
+              <span class="faq-arrow"></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Your operator will review the issue, diagnose the cause, and guide you on how to recover performance.  
+                We monitor best practices and keep your setup aligned with what works.
+              </p>
+            </div>
+        </div>
+                  <div class="faq-item">
+            <button class="faq-question">
+              <span>Why trust ColdOps?</span>
+              <span class="faq-arrow"></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Because we keep things simple, transparent and hands-on.  
+                You always know exactly what we’re setting up, why we’re doing it, and how it protects your sending.  
+                No hidden systems, no surprises — just a team that treats your setup like our own and makes sure you’re ready to send safely.
+              </p>
+            </div>  
+      </div>
+    </section>
+
+    <!-- CONTACT (Google Form) -->
+    <section id="book" class="section blue reveal">
+      <div class="container">
+        <h2>Contact ColdOps</h2>
+        <p class="muted">
+          Share a bit about your current setup and what you’re trying to build. We’ll review it and get back to you with next steps and a tailored infra option.
+        </p>
+
+        <div class="calendly-frame">
+          <iframe
+            src="https://forms.gle/XBt4RaRVJm3427zZ8"
+            frameborder="0"
+            scrolling="yes"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div>© 2025 ColdOps — All rights reserved.</div>
+      <a href="https://x.com/ColdOpsCO" target="_blank" rel="noopener" class="x-link">
+        Follow @ColdOpsCO
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
